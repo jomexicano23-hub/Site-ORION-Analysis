@@ -161,6 +161,9 @@
           </div>
           <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:22px;padding-top:16px;border-top:1px solid var(--border);">
             <div style="display:flex;justify-content:space-between;gap:12px;font-size:13px;"><span style="color:var(--text-muted);">{{ limitLabel }}</span><span style="font-family:var(--font-mono);color:var(--text-strong);text-align:right;">{{ p.limit }}</span></div>
+            <sc-if value="{{ p.hasExtra }}">
+              <div style="display:flex;justify-content:space-between;gap:12px;font-size:13px;"><span style="color:var(--text-muted);">{{ p.extraLabel }}</span><span style="font-family:var(--font-mono);color:var(--text-strong);text-align:right;">{{ p.extra }}</span></div>
+            </sc-if>
             <div style="display:flex;justify-content:space-between;gap:12px;font-size:13px;"><span style="color:var(--text-muted);">{{ supportLabel }}</span><span style="font-family:var(--font-mono);color:var(--text-strong);text-align:right;">{{ p.support }}</span></div>
           </div>
           <a href="Agendar-Academy.dc.html" style="margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:50px;font-family:var(--font-display);font-weight:600;font-size:15px;border-radius:var(--radius-button);background:var(--surface-2);color:var(--text-strong);border:1px solid var(--border-strong);text-decoration:none;transition:var(--transition-base);" style-hover="border-color:var(--border-glow);background:var(--surface-hover);">{{ subscribe }}</a>
